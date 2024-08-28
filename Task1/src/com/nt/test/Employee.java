@@ -33,7 +33,7 @@ public class Employee
 		{
 			empSalary+=15000;
 		}
-		else
+		else if(noOfProj<=0)
 		{
 			System.out.println("Number of Projects cannot be negative");
 		}
@@ -42,4 +42,11 @@ public class Employee
 	{
         System.out.printf("Updated Salary: %.2f%n", empSalary);
     }
+
+	@Override
+	public String toString() {
+		return "Employee [firstName=" + firstName + ", lastName=" + lastName + ", empId=" + empId + ", empSalary="
+				+ empSalary + ", noOfProj=" + noOfProj + "]";
+	}
+	
 }
